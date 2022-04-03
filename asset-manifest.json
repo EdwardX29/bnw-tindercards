@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bnw-tindercards/static/css/main.34678177.css",
-    "main.js": "/bnw-tindercards/static/js/main.3a2dff2d.js",
-    "static/js/787.9b47aebd.chunk.js": "/bnw-tindercards/static/js/787.9b47aebd.chunk.js",
+    "main.js": "/bnw-tindercards/static/js/main.6a8922ad.js",
+    "static/js/787.acc0e4e4.chunk.js": "/bnw-tindercards/static/js/787.acc0e4e4.chunk.js",
     "index.html": "/bnw-tindercards/index.html",
     "main.34678177.css.map": "/bnw-tindercards/static/css/main.34678177.css.map",
-    "main.3a2dff2d.js.map": "/bnw-tindercards/static/js/main.3a2dff2d.js.map",
-    "787.9b47aebd.chunk.js.map": "/bnw-tindercards/static/js/787.9b47aebd.chunk.js.map"
+    "main.6a8922ad.js.map": "/bnw-tindercards/static/js/main.6a8922ad.js.map",
+    "787.acc0e4e4.chunk.js.map": "/bnw-tindercards/static/js/787.acc0e4e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34678177.css",
-    "static/js/main.3a2dff2d.js"
+    "static/js/main.6a8922ad.js"
   ]
 }
