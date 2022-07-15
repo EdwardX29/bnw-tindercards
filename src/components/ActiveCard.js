@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import PictureSlider from './PictureSlider';
 import { motion } from "framer-motion";
 
@@ -53,11 +53,13 @@ const ActiveCard = (props) => {
                         id="decline"
                         src={`${process.env.PUBLIC_URL}/x.svg` } alt="decline icon"
                         onClick={() => {
-                                setClicked("declined")
-                                setTimeout(() => {
-                                    props.swipeLeft()
+                                if (clicked === ""){
+                                    setClicked("declined")
+                                    setTimeout(() => {
+                                        props.swipeLeft()
 
-                                }, 250)
+                                    }, 250)
+                                }
 
                             }
                         }
@@ -74,12 +76,13 @@ const ActiveCard = (props) => {
                         id="heart"
                         src={`${process.env.PUBLIC_URL}/heart2.svg` } alt="heart icon"
                         onClick={() => {
-                            setClicked("heart")
-                            setTimeout(() => {
-                                props.swipeRight()
+                            if (clicked === ""){
+                                setClicked("heart")
+                                setTimeout(() => {
+                                    props.swipeLeft()
 
-                            }, 250)
-                        }}
+                                }, 250)
+                        }}}
                         whileHover={{
                             scale:1.5,
                             transition:{duration:1},
