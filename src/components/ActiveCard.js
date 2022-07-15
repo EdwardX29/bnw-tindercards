@@ -1,17 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PictureSlider from './PictureSlider';
 import './ActiveCard.css'
-// import  {ReactComponent as Logo} from '../assets/location.svg';
 const ActiveCard = (props) => {
-
-    const  [clicked, setClicked] = useState(false); 
-
 
     return (
         <>
-        {!clicked ? 
 
-        <div> 
             <div className="card">
             <PictureSlider images={props.images} />
 
@@ -26,7 +20,6 @@ const ActiveCard = (props) => {
                 </div>
                 <div className="location">
                     <img id="location-icon" src={`${process.env.PUBLIC_URL}/location.svg` } alt="location icon"/>
-                    {/* <Logo /> */}
                     <span>{props.distance} km away</span>
                 </div>
                 <div className="demographics">
@@ -43,14 +36,11 @@ const ActiveCard = (props) => {
                 </div>
             </div>
                 <div className="rating-container">
-                    <img className="rate" id="decline" src={`${process.env.PUBLIC_URL}/x.svg` } alt="decline icon" onClick={() => setClicked(true)}/>
-                    <img className="rate" id="heart" src={`${process.env.PUBLIC_URL}/heart2.svg` } alt="heart icon" onClick={() => setClicked(true)}/>
+                    <img className="rate" id="decline" src={`${process.env.PUBLIC_URL}/x.svg` } alt="decline icon" onClick={() => props.swipeLeft()}/>
+                    <img className="rate" id="heart" src={`${process.env.PUBLIC_URL}/heart2.svg` } alt="heart icon" onClick={() => props.swipeRight()}/>
                 </div>
             </div>
-        </div>
 
-            : null
-        }
         </>
     )   
 }

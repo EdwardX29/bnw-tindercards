@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './PictureSlider.css';
 const PictureSlider = (props) => {
 
@@ -16,41 +16,13 @@ const PictureSlider = (props) => {
         }
     }
 
-    useEffect( () => {
-         props.images.forEach( (image) => {
-            // console.log(image);
-            const img = new Image();
-            img.src = image;
-            // console.log(img)
-        })
-        document.title = "hayley";
-    })
     
-    // let  poo = [];
-
-    // useEffect(
-
-    //     () => {
-        
-    //         props.images.forEach( (image) => {
-    //             const x = require(`../../public/${image}`)
-    //             poo.push(x)
-    //         })
-    //         // const img = require(`../../public/${props.images[0]}`);
-    //         console.log(poo[0]);
-            
-    //     }
-        
-    // )
-    // console.log(poo);
     return (
 
         <div 
             className="image-container" 
             style={{
-                // backgroundImage : `url(bnw-tindercards/${props.images[index]})` 
                 backgroundImage: `url(${process.env.PUBLIC_URL}/${props.images[index]})`
-                // backgroundImage : `url(${image})`
                 }}
         >
             {  index > 0 ? 

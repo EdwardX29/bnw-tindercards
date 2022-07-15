@@ -6,15 +6,18 @@
     
     background-color: rgb(255, 255, 255);
     font-family: 'Varela Round';
-    display:flex;
-    flex-direction:column;
     width: 275px;
-    height:auto;
+    /* height: auto; */
+    min-height: 30%;
+    max-height: 40%;
     padding: 20px 20px;
-    margin: 10px 0px;
+    margin: auto;
     border-radius :10px;
-
-    box-shadow : 3px 3px 10px 1px rgb(1, 85, 81)
+    box-shadow : 3px 3px 10px 1px rgb(1, 85, 81);
+    /* position:absolute;
+    top:60%;
+    left:50%;
+    transform : translate(-50%, -60%); */
 }
 
 .basic-info {
@@ -48,6 +51,38 @@
 
 .demographics {
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 475px){
+    .card {
+        width:50%;
+    }
+    .name {
+        font-size:1.25em;
+    }
+
+    .age {
+        font-size:1.25em;
+    }
+    
+    .description {
+        font-size: 0.75em;
+    }
+
+}
+
+@media screen and (max-height: 700px) {
+    .name {
+        font-size:1.2em;
+    }
+
+    .age {
+        font-size:1.2em;
+    }
+    
+    .description {
+        font-size: 0.75em;
+    }
 }
 
 .quote {

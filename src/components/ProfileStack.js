@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState}from 'react';
 import ActiveCard from './ActiveCard';
 import './ProfileStack.css'
 
@@ -26,7 +26,7 @@ const profiles = [
         "id" : 2,
     },
   {
-    "images" : ["foster1.png", "foster2.png", "foster3.png"],
+        "images" : ["foster1.png", "foster2.png", "foster3.png"],
         "name" : "Henry Foster",
         "age" : 23,
         "distance" : 30,   
@@ -39,7 +39,7 @@ const profiles = [
   },
 
   {
-     "images" : ["mm1.png", "mm2.png", "mm3.png"],
+        "images" : ["mm1.png", "mm2.png", "mm3.png"],
         "name" : "Mustapha Mond",
         "age" : 40,
         "distance" : 70,   
@@ -50,7 +50,7 @@ const profiles = [
         "id" : 4, 
   },
   {
-    "images" : ["john1.png", "john2.png", "john3.png"],
+        "images" : ["john1.png", "john2.png", "john3.png"],
         "name" : "John (the Savage)",
         "age" : 18,
         "distance" : 200,   
@@ -67,17 +67,40 @@ const profiles = [
 
 
 const ProfileStack = () => {
-    
-    const list = []
 
-    profiles.forEach(profile => 
-        list.push(<ActiveCard {...profile} />)       
-        )
-        
+    const [stackIndex, setStackIndex] = useState(profiles.length-1)
     
+    const goBack = () => {
+        if (stackIndex < profiles.length-1){
+            console.log("Let's go back")
+            setStackIndex(stackIndex+1)
+        }
+
+    }
+
+    const swipeRight = () => {
+
+        if (stackIndex >= 0){
+            console.log("Let's swipe right")
+            setStackIndex(stackIndex-1)
+        }
+
+    }
+
+    const swipeLeft = () => {
+
+        if (stackIndex >= 0){
+            console.log("Let's swipe left")
+            setStackIndex(stackIndex-1)
+        }
+
+    }
+
     return (
-        <div>
-            {list}
+        <div className="profileStack">
+            <button className="backBtn" onClick={() => goBack() }>Go Back!</button>
+
+            {stackIndex >= 0 && <ActiveCard key={stackIndex} {...profiles[stackIndex]} swipeRight={() => swipeRight()} swipeLeft={() => swipeLeft()}/>}
         </div>
     )
 
