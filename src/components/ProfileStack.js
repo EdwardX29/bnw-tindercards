@@ -22,7 +22,7 @@ const profiles = [
         "gender" : "Female",
         "sClass" : "Beta Plus Β", 
         "quote" : "A Gramme is Better Than a Damn",
-        "description" : "Looking for someone to go on soma     holiday with ;). Enjoys working in the conditioning hatchery, cute outfits, and Malthusian belts with contraceptives. Hates the savage reservation (except if your John). I am very pneumatic!!",
+        "description" : "Looking for someone to go on soma holiday with ;). I enjoy working in the conditioning hatchery, cute outfits, and Malthusian belts with contraceptives. I hate the savage reservation (except if you're John). I am very pneumatic!!",
         "id" : 2,
     },
   {
@@ -33,7 +33,7 @@ const profiles = [
         "gender" : "Male",
         "sClass" : "Alpha Plus Α", 
         "quote" : "Everyone Works for Everyone Else",
-        "description" : "Perfectly fit, happy, and conditioned. Your typical upper-caste citizen.  A functional member of the World State. Works in the Hatchery. Loves pneumatic women and doing soma.",
+        "description" : "A perfectly fit, happy, and conditioned alpha. Your typical upper-caste citizen.  A functional member of the World State. Loves pneumatic women and soma.",
         "id" : 3,
     
   },
@@ -57,7 +57,7 @@ const profiles = [
         "gender" : "Male",
         "sClass" : "Savage", 
         "quote" : "Don’t you even know what manhood and freedom are?",
-        "description" : "White son of Director of Hatcheries and Conditioning and Linda. Grew up in the Savage Reservation. Hates hedonism; renounced all worldly pleasures. Loves reading Shakespeare in my free time.",
+        "description" : "White son of Director of Hatcheries and Conditioning and Linda. Grew up in the Savage Reservation. Hates hedonism; renounced all worldly pleasures. Loves reading Shakespeare in time.",
         "id" : 5, 
     
   }
