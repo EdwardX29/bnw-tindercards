@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bnw-tindercards/static/css/main.c5ae710f.css",
-    "main.js": "/bnw-tindercards/static/js/main.c1ea7180.js",
+    "main.css": "/bnw-tindercards/static/css/main.4a9a7881.css",
+    "main.js": "/bnw-tindercards/static/js/main.6c8f5ab5.js",
     "static/js/787.9b47aebd.chunk.js": "/bnw-tindercards/static/js/787.9b47aebd.chunk.js",
     "index.html": "/bnw-tindercards/index.html",
-    "main.c5ae710f.css.map": "/bnw-tindercards/static/css/main.c5ae710f.css.map",
-    "main.c1ea7180.js.map": "/bnw-tindercards/static/js/main.c1ea7180.js.map",
+    "main.4a9a7881.css.map": "/bnw-tindercards/static/css/main.4a9a7881.css.map",
+    "main.6c8f5ab5.js.map": "/bnw-tindercards/static/js/main.6c8f5ab5.js.map",
     "787.9b47aebd.chunk.js.map": "/bnw-tindercards/static/js/787.9b47aebd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5ae710f.css",
-    "static/js/main.c1ea7180.js"
+    "static/css/main.4a9a7881.css",
+    "static/js/main.6c8f5ab5.js"
   ]
 }
