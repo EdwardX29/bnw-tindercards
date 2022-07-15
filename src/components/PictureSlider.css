@@ -48,4 +48,17 @@
 
 }
 
+#declineFeedback {
+    opacity:0;
+    height:60%;
+    width:60%;
+    filter : invert(18%) sepia(100%) saturate(7457%) hue-rotate(0deg) brightness(98%) contrast(112%);
+}
+
+#heartFeedback {
+   opacity:0;
+   height:60%;
+   width:60%;
+    filter : invert(60%) sepia(97%) saturate(2641%) hue-rotate(80deg) brightness(112%) contrast(133%);
+}   
 

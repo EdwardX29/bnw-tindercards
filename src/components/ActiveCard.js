@@ -1,13 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import PictureSlider from './PictureSlider';
+import { motion } from "framer-motion";
+
 import './ActiveCard.css'
+
+
+
 const ActiveCard = (props) => {
+
+    const [clicked, setClicked] = useState("") 
+
+    // setClicked("shit")
+
+    // console.log(clicked)
 
     return (
         <>
-
+            
             <div className="card">
-            <PictureSlider images={props.images} />
+            <PictureSlider clicked={clicked} images={props.images} />
 
             <div className="user-info">
                 <div className="basic-info">
@@ -36,8 +47,50 @@ const ActiveCard = (props) => {
                 </div>
             </div>
                 <div className="rating-container">
-                    <img className="rate" id="decline" src={`${process.env.PUBLIC_URL}/x.svg` } alt="decline icon" onClick={() => props.swipeLeft()}/>
-                    <img className="rate" id="heart" src={`${process.env.PUBLIC_URL}/heart2.svg` } alt="heart icon" onClick={() => props.swipeRight()}/>
+
+                    <motion.img 
+                        className="rate"
+                        id="decline"
+                        src={`${process.env.PUBLIC_URL}/x.svg` } alt="decline icon"
+                        onClick={() => {
+                                setClicked("declined")
+                                setTimeout(() => {
+                                    props.swipeLeft()
+
+                                }, 250)
+
+                            }
+                        }
+                        whileHover={{
+                            scale:1.5,
+                            transition:{duration:1},
+                        }}
+                        whileTap={{
+                            scale:0.9
+                        }}
+                    />
+                    <motion.img 
+                        className="rate"
+                        id="heart"
+                        src={`${process.env.PUBLIC_URL}/heart2.svg` } alt="heart icon"
+                        onClick={() => {
+                            setClicked("heart")
+                            setTimeout(() => {
+                                props.swipeRight()
+
+                            }, 250)
+                        }}
+                        whileHover={{
+                            scale:1.5,
+                            transition:{duration:1},
+                        }}
+                        whileTap={{
+                            scale:0.9
+                        }}
+                    />
+
+
+                
                 </div>
             </div>
 
