@@ -25,6 +25,7 @@ const PictureSlider = (props) => {
                 backgroundImage: `url(${process.env.PUBLIC_URL}/${props.images[index]})`
                 }}
         >
+
             {  index > 0 ? 
                     <img src={`${process.env.PUBLIC_URL}/left.svg` } className="arrow" alt="left-arrow-icon" 
                     onClick={() => decreaseIndex()}/ >   
